@@ -17,7 +17,7 @@ a{
 }
 .container{
     display:grid;
-    grid-template-columns: auto minmax(1fr, 1110px) auto;
+    grid-template-columns: 1fr minmax(auto, 1120px) 1fr;
     grid-template-areas: "header header header";
 }
 .header{
