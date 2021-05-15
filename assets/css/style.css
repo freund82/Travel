@@ -12,3 +12,60 @@ body{
 h1, h2, h3, h4, h5, h6{
     margin:0;
 }
+a{
+    text-decoration: none;
+}
+.container{
+    display:grid;
+    grid-template-columns: auto minmax(1fr, 1110px) auto;
+    grid-template-areas: "header header header";
+}
+.header{
+    grid-area: header;
+    background:url("../images/bg.jpg") center no-repeat;
+    background-size:cover;
+    height:100vh;
+    
+}
+.header_inner{
+width:100%;
+background-color:#fff;
+}
+.header_menu{
+    width:100%;
+    max-width:1110px;
+    height:65px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.header_logo--text{
+    background:linear-gradient(to right, #6170ff, #8e4aeb);
+    background-clip:text;
+    -webkit-background-clip: text; /* не все браузеры поддерживают градиентный текст*/
+    color:transparent;
+    font-weight: bold;
+    font-size: 29px;
+}
+.header_nav--link{
+    margin-right:43px;
+    font-size:16px;
+    color:#959595;
+    background-color:transparent;
+    padding:23px 10px 23px 10px;
+    
+}
+.header_nav--link:hover{
+    color:#fff;
+    background-color:#626FFE;
+}
+.phone p, a{
+    color:#959595;
+    background-color:transparent;
+    padding:23px 10px 23px 10px;  
+}
+.phone>:hover{
+    color:#fff;
+    background:linear-gradient(to right, #6170ff, #8e4aeb);
+}
