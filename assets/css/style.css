@@ -77,11 +77,12 @@ background-color:#fff;
     width:100%;
     max-width:860px;
     height:365px;
-    padding:64px 42px 71px 31px;
+    padding-top:64px;
     background-color:rgba(111,130,251, 0.5);
     position:absolute;
-    top:30%;
-    left:20%;  
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);  
 }
 .header_block h1{
     font-size:100px;
