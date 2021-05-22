@@ -2,7 +2,6 @@ body{
     margin:0;
     font-family: 'Roboto', sans-serif;
 }
-
 *,
 *:before,
 *:after{
@@ -20,6 +19,7 @@ a{
     display:grid;
     grid-template-columns: 1fr minmax(auto, 1120px) 1fr;
     grid-template-areas: "header header header";
+                
 }
 
 /*Header*/
@@ -29,6 +29,8 @@ a{
     background:url("../images/bg.jpg") center no-repeat;
     background-size:cover;
     height:100vh;
+    position:relative;
+    z-index:100;
 }
 .header_inner{
 width:100%;
@@ -118,12 +120,11 @@ background-color:#fff;
     font-weight:normal;
 }
 
-/*Search block*/;
-
-.search{
-    width:100%;
-    position:absolute;
+/*Search block*/
+.search_block{
+    width:200px;
+    height:200px;
     background:red;
-    color:red;
-    z-index:1000;
 }
+
+
