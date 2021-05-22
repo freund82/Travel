@@ -93,7 +93,7 @@ background-color:#fff;
     top:50%;
     left:50%;
     transform:translate(-50%, -50%);
-   
+   z-index:100;
 }
 .header_block h1{
     font-size:95px;
@@ -119,13 +119,11 @@ background-color:#fff;
 }
 
 /*Search block*/;
-.search_block{
+
+.search{
     width:100%;
-    max-width:1110px;
-    height:188px;
-    background:linear-gradient(to right, #6170ff, #8e4aeb);
     position:absolute;
-    top:50%;
-    left:50%;
-    z-index:1100;
+    background:red;
+    color:red;
+    z-index:1000;
 }
