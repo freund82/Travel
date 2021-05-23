@@ -21,7 +21,8 @@ a{
     grid-template-areas: "header header header"
                           "content content content"
                           ". cards ."
-                          "slider slider slider";
+                          "slider slider slider"
+                          ". signs .";
                 
 }
 
@@ -262,7 +263,8 @@ input{
     text-align: center;
 }
 .slider_text{
-    width:720px;
+    width:100%;
+    max-width:720px;
     text-align: center;
     margin: auto;
     margin-top:44px;
@@ -294,4 +296,12 @@ input{
     transform:rotate(45deg);
     cursor: pointer;
     
+}
+/*Signs*/
+.signs{
+    grid-area:signs;
+    height:323px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
 }
